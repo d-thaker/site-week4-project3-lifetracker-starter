@@ -21,7 +21,7 @@ function getDatabaseUri() {
   //   `postgresql://${dbUser}:${dbPass}@${dbHost}:${dbPort}/${dbName}`
   // );
 
-  return "postgres://lifetracker_sbom_user:0FZ8R8Hz0nNTtIIHqI9eDBK4gaQhKkNL@dpg-chokj0fdvk4goerkvv4g-a/lifetracker_sbom";
+  return "postgres://lifetracker_postgresql_user:E77QRpOEiJSef9LT7pFegRfAImkWPuoT@dpg-chokq7ik728ivvtn3880-a/lifetracker_postgresql";
 }
 
 const BCRYPT_WORK_FACTOR = IS_TESTING ? 1 : 13;
