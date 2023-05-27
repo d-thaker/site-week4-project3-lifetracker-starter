@@ -5,7 +5,7 @@ import apiClient from "../../services/apiClient";
 import Empty from "../Empty/Empty";
 import moment from "moment";
 
-import "./nutritionPage.css";
+//import "./nutritionPage.css";
 
 export default function NutritionPage({ appState, setAppState }) {
   if (!appState.isAuthenticated) {
