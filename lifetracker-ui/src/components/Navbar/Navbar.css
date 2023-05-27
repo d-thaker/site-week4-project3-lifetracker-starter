@@ -1,3 +1,71 @@
 .Navbar {
-  padding-top: 20px;
+  margin: 0 auto;
+  max-width: 1310px;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Navbar-container {
+  display: flex;
+  align-items: center;
+}
+
+.Navbar-logo {
+  margin-right: 50px;
+}
+
+.Navbar-links {
+  display: flex;
+}
+
+.Navbar-link {
+  margin-right: 50px;
+  opacity: 0.7;
+  color: #007bff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.Navbar-link:hover {
+  opacity: 1;
+}
+
+.Navbar-link-active {
+  opacity: 1;
+}
+
+.Navbar-auth {
+  display: flex;
+  align-items: center;
+}
+
+.Navbar-button {
+  margin-right: 20px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #333333;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.Navbar-button:hover {
+  background-color: #333333;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.Navbar-button-link {
+  text-decoration: none;
 }

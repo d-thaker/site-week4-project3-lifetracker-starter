@@ -1,6 +1,154 @@
-.ExercisePage .button {
+/* ExercisePage.css */
+
+.exercise-page {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
 }
-.ExercisePage .button button {
-  flex: 1;
+
+.exercise-page-container {
+  max-width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-page-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.exercise-feed {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.exercise-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.exercise-item {
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.exercise-item-timestamp {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.exercise-item-card {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+
+.exercise-item-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.exercise-item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.exercise-item-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.exercise-item-category {
+  font-size: 14px;
+  color: #888;
+}
+
+.exercise-item-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.exercise-item-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exercise-page-create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.exercise-page-create-form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-page-create-form-field {
+  margin-bottom: 16px;
+}
+
+.exercise-page-create-form-field label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.exercise-page-create-form-field input,
+.exercise-page-create-form-field select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.exercise-page-create-form-field input.error {
+  border-color: red;
+}
+
+.exercise-page-create-form-field-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.exercise-page-create-form-field-group input {
+  width: 48%;
+}
+
+.exercise-page-create-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.exercise-page-create-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }

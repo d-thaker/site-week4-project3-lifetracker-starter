@@ -1,6 +1,121 @@
-.SleepPage .button {
+.SleepPage {
+  margin-top: 10px;
+}
+
+.sleep-feed {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sleep-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  border-radius: 8px;
+  padding: 16px;
+  width: 300px;
+  margin: 10px;
+}
+
+.Avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  background-color: #1a202c;
+  border-radius: 50%;
+}
+
+.name {
+  color: white;
+  font-size: 18px;
+}
+
+.white {
+  color: white;
+}
+
+.Flex {
   display: flex;
 }
-.SleepPage .button button {
-  flex: 1;
+
+.Container {
+  max-width: 960px;
+}
+
+.Stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+}
+
+.StatLabel {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.StatNumber {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.Stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+}
+
+input {
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+input.invalid {
+  border-color: red;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: cyan;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:not([disabled]):hover {
+  background-color: #5cdb95;
+}
+
+button:not([disabled]):active {
+  background-color: #37966f;
+}
+
+button:not([disabled]):focus {
+  outline: none;
 }

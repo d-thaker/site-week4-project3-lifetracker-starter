@@ -1,0 +1,8 @@
+.empty {
+  display: flex;
+  flex-direction: column;
+}
+
+.empty .heading {
+  margin-bottom: 10px;
+}

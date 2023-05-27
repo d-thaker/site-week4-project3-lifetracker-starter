@@ -1,0 +1,67 @@
+.register-container {
+  display: flex;
+  flex-direction: column;
+  width: 100wh; /* It seems there might be a typo here, it should probably be 100vw for viewport width */
+  min-height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2px; /* Added "px" unit for margin value */
+  justify-content: center;
+  align-items: center;
+}
+
+.register-icon {
+  background: teal;
+  width: 40px;
+  height: 40px;
+}
+
+.register-title {
+  color: teal;
+}
+
+.register-form {
+  min-width: 90%;
+  max-width: 468px;
+}
+
+.register-form-container {
+  word-spacing: 4px; /* Added "px" unit for word-spacing value */
+  padding: 1rem; /* Assuming you want a 1rem padding on all sides */
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.register-input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.register-input {
+  border-color: initial;
+}
+
+.register-input-icon {
+  color: gray;
+}
+
+.register-input-icon i {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  font-size: 18px;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.register-button {
+  border-radius: 0;
+  background: teal;
+  color: white;
+  width: 100%;
+}
