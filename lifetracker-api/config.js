@@ -16,10 +16,12 @@ function getDatabaseUri() {
   const dbProdName = process.env.DATABASE_NAME || "lifetracker";
   const dbName = process.env.NODE_ENV === "test" ? dbTestName : dbProdName;
 
-  return (
-    process.env.DATABASE_URL ||
-    `postgresql://${dbUser}:${dbPass}@${dbHost}:${dbPort}/${dbName}`
-  );
+  // return (
+  //   process.env.DATABASE_URL ||
+  //   `postgresql://${dbUser}:${dbPass}@${dbHost}:${dbPort}/${dbName}`
+  // );
+
+  return "postgres://lifetracker_sbom_user:0FZ8R8Hz0nNTtIIHqI9eDBK4gaQhKkNL@dpg-chokj0fdvk4goerkvv4g-a/lifetracker_sbom";
 }
 
 const BCRYPT_WORK_FACTOR = IS_TESTING ? 1 : 13;
